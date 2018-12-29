@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -246,5 +246,24 @@
         </div>
       </div>
     </footer>
+    <script>
+      console.log('Hola mundo es mi primera linea JS');
+
+      const menu = document.querySelector('.menu');
+      console.log(menu);
+      const burgerButton = document.querySelector('#burger-menu');
+      console.log(burgerButton);
+
+      burgerButton.addEventListener('click', hideShow)
+
+      function hideShow(){
+        if (menu.classList.contains('is-active')){ /*si tiene la clase?*/
+          menu.classList.remove('is-active'); /*si la tiene que la oculte*/
+        } else {
+         menu.classList.add('is-active'); /*si no la tiene que la muestre*/
+        }
+
+      }
+   </script>
   </body>
 </html>
