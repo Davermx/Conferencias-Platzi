@@ -459,6 +459,10 @@ figure {
 
 
 @media screen and (max-width: 767px){
+  .portfolio{
+    padding: 0;
+  }
+
 .burger-button{
   display: block;
 }

@@ -263,9 +263,11 @@
         } else {
           burgerButton.removeEventListener('click', hideShow)
         }
-
       }
+      validation(ipad);
 
+
+      
       function hideShow(){
         if (menu.classList.contains('is-active')){ /*si tiene la clase?*/
           menu.classList.remove('is-active'); /*si la tiene que la oculte*/
