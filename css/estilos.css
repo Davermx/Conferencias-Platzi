@@ -398,7 +398,7 @@ figure {
 }
 
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
   .container{
     padding: 0 1em;
   }
@@ -592,6 +592,12 @@ figure {
     text-align: center;
     border: 1px solid transparent;
    }
+
+  .social-link{
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+  }   
 }
 
 
